@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create a env file
+      - name: Create front-end env file
         uses: SpicyPizza/create-envfile@v1.3.1
         with:
           envkey_REACT_APP_BACK_END_URL: ${{secrets.REACT_APP_BACK_END_URL}}
